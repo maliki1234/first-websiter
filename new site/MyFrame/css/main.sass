@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
+       
 $color: blue
 
 // light color
@@ -215,148 +217,9 @@ $black:  #111111
 .stroke-black 
       stroke: $black 
 // end of skin code
-// body code
-*
-       padding: 0
-       margin: 0
-       box-sizing: border-box
-       scroll-behavior: smooth
 
-body
-       margin: 0
-       padding: 0
-       background-color: $light
-body::-webkit-scrollbar
-       // width: 0.5em
-       width: 0.2cm
-// body::-webkit-track
-//        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
-body::-webkit-scrollbar-thumb
-       background-color: darkgrey
-       outline: 1px solid slaegray
+// START TEMPLATE
 
-// NAVIGATION MENU
-
-.navbar
-       padding: 15px 0
-       font-family: Arial, Helvetica, sans-serif
-.navbar:after
-       display: table
-       clear: both
-       content: ""
-
-.navbar-light
-       background: darken($light, 5% )
-       color: lighten($black, 20% )
-       
-.navbar-dark
-       background-color: lighten($black, 5%)
-       color: darken($white, 20% )
-.navbar-sticky
-       position: sticky
-       top: 0
-       z-index: 100
-.logo
-       font-size: 23px
-       float: left
-       margin: 0.2em 1.5em
-       line-height: 20%
-.nav
-       float: right
-       margin-right: 30px
-       ul
-              font-family: 'Raleway', Arial, sans-serif
-              font-weight: 500
-              text-transform: uppercase
-              text-align: center
-       
-              li 
-                     display: inline-block
-                     // margin: 0 10px
-                     list-style: outside none none
-                     margin: 0 1em
-                     overflow: hidden
-
-                     a 
-                            padding: 0 0.5em 0 0.2em
-                            color: $black
-                            position: relative
-                            display: inline-block
-                            letter-spacing: 1px
-                            margin: 0
-                            text-decoration: none
-                     a:before,
-                     a:after
-                           
-                            position: absolute
-                            transition: all 0.3s ease
-                     a:before
-                            right: 100%
-                            display: block
-                            width: 3px
-                            height: 100%
-                            content: ""
-                            background-color: #f39c12
-                            color: $black
-
-                     a:after
-                            padding: 0 0.5em 0 0.2em
-                            position: absolute
-                            right: 100%
-                            top: 0
-                            content: attr(data-hover)
-                            color: $red
-                            white-space: nowrap
-              li:hover a,
-              .current a 
-                     transform: translateX(100%);
-                     
-       ul *
-              transition: all 0.35s ease
-              box-sizing: border-box
-
-// background parallax
-
-.parallax
-       clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%)
-       background-image: url('../../media/moja.jpg')
-       width: 100%
-       height: 70vh
-       background-attachment: fixed
-       background-position: center
-       background-repeat: no-repeat
-       background-size: cover
-
-
-.about
-       margin-top: 400px
-       font-family: "Comic Sans MS", cursive, sans-serif
-       font-size: 16px
-       padding: 70px 90px
-       text-align: justify
-
-.media
-       clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%)
-       // height: 100vh
-       width: 100%
-       margin: 40px 0
-       .main-content
-              margin-top: 50px
-              img
-                     
-                     width: 600px
-                     height: 350px
-              .text
-                     width: 400px
-                     padding: 40px 0
-                     text-align: justify
-                     margin: 40px 40px 0 40px
-                     font-size: 20px
-                     font-family: "Comic Sans MS", cursive, sans-serif
-       .main-content:after
-              clear: both
-              content: ""
-              display: table
 // my templates
 .container
        width: 90%
@@ -513,5 +376,250 @@ body::-webkit-scrollbar-thumb
        padding: 40px 0
 .py-5
        padding: 50px 0
+
+
+.text-center
+       text-align: center
+       font-family: Arial, Helvetica, sans-serif
+       font-weight: 500
+       text-transform: uppercase
+       letter-spacing: 1px
+.text-justify
+       text-align: justify
+
+.text-left
+       text-align: left
+
+
+
+
+
+// END OF THE TEMPLATE
+
+
+
+
+
+
+
+
+
+// FRESH CODE
+
+
+
+// body code
+*
+       padding: 0
+       margin: 0
+       box-sizing: border-box
+       scroll-behavior: smooth
+
+body
+       margin: 0
+       padding: 0
+       background-color: $light
+body::-webkit-scrollbar
+       // width: 0.5em
+       width: 0.2cm
+// body::-webkit-track
+//        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+body::-webkit-scrollbar-thumb
+       background-color: darkgrey
+       outline: 1px solid slaegray
+
+// NAVIGATION MENU
+
+.navbar
+       padding: 15px 0
+       font-family: Arial, Helvetica, sans-serif
+.navbar:after
+       display: table
+       clear: both
+       content: ""
+
+.navbar-light
+       background: darken($light, 5% )
+       color: lighten($black, 20% )
+       
+.navbar-dark
+       background-color: lighten($black, 5%)
+       color: darken($white, 20% )
+.navbar-sticky
+       position: sticky
+       top: 0
+       z-index: 100
+.logo
+       font-size: 23px
+       float: left
+       margin: 0.2em 1.5em
+       line-height: 20%
+.nav
+       float: right
+       margin-right: 30px
+       ul
+              font-family: 'Raleway', Arial, sans-serif
+              font-weight: 500
+              text-transform: uppercase
+              text-align: center
+       
+              li 
+                     display: inline-block
+                     // margin: 0 10px
+                     list-style: outside none none
+                     margin: 0 1em
+                     overflow: hidden
+
+                     a 
+                            padding: 0 0.5em 0 0.2em
+                            color: $black
+                            position: relative
+                            display: inline-block
+                            letter-spacing: 1px
+                            margin: 0
+                            text-decoration: none
+                     a:before,
+                     a:after
+                           
+                            position: absolute
+                            transition: all 0.3s ease
+                     a:before
+                            right: 100%
+                            display: block
+                            width: 3px
+                            height: 100%
+                            content: ""
+                            background-color: #f39c12
+                            color: $black
+
+                     a:after
+                            padding: 0 0.5em 0 0.2em
+                            position: absolute
+                            right: 100%
+                            top: 0
+                            content: attr(data-hover)
+                            color: $red
+                            white-space: nowrap
+              li:hover a,
+              .current a 
+                     transform: translateX(100%);
+                     
+       ul *
+              transition: all 0.35s ease
+              box-sizing: border-box
+
+// background parallax
+
+.parallax
+       clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%)
+       background-image: url('../../media/moja.jpg')
+       width: 100%
+       height: 70vh
+       background-attachment: fixed
+       background-position: center
+       background-repeat: no-repeat
+       background-size: cover
+.contena
+       width: 350px
+       overflow: hidden
+       position: absolute
+       top: 420px
+       padding: 20px
+       background: #000000ef
+       margin: 0 0 0 400px
+       ul 
+              color: #ffff
+              li
+                     color: #ffff
+                     display: none
+                     transition: display 10s linear
+                     h4 
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-size: 24px
+                            text-transform: capitalize 
+                     p 
+                            text-align: justify
+                            padding: 10px 0
+                            font-family: 'Acme', sans-serif
+.displayBlock
+       display: block
+.about
+       margin-top: 100px
+       font-family: "Comic Sans MS", cursive, sans-serif
+       font-size: 16px
+       padding: 70px 90px
+       text-align: justify
+
+.media
+       clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%)
+       // height: 100vh
+       width: 100%
+       margin: 40px 0
+       .main-content
+              margin-top: 50px
+              img
+                     
+                     width: 600px
+                     height: 350px
+              .text
+                     width: 400px
+                     padding: 40px 0
+                     text-align: justify
+                     margin: 40px 40px 0 40px
+                     font-size: 20px
+                     font-family: "Comic Sans MS", cursive, sans-serif
+       .main-content:after
+              clear: both
+              content: ""
+              display: table
+// ROUTES
+
+
+.route
+       // background: red
+       padding: 30px 20px
+       // background: darken(white, 10% )
+       h1
+              font-size: 30px
+              font-family: 'Acme', sans-serif;
+              text-align: center
+              text-transform: uppercase
+       .row 
+              display: grid
+              grid-template-columns: repeat(4, auto)
+              grid-gap: 4px
+              // background: #9c9797dc
+              
+              
+              
+              .column 
+                     // background-color: blue
+                     height: 300px
+                     background-size: cover
+                     background-position: center
+                     // margin: 3px
+                     border: 8px #aaa5a5f3 solid
+                     .overlay 
+                            width: 100%
+                            height: 100%
+                            transition: all 2s ease
+                            p 
+                                   text-align: center
+                                   position: relative
+                                   top: 90px
+                                   font-family: 'Mansalva', cursive;
+                     .overlay:hover
+                            background: #1a1a1af1
+// END OF THE ROUTE
+
+
+
+
+
+
+
+
+
+// END OF FRESH CODE
 
 

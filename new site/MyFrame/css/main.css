@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 .bg-navy {
   background-color: #001F3F;
 }
@@ -341,184 +342,6 @@
   stroke: #111111;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #FAF9F8;
-}
-
-body::-webkit-scrollbar {
-  width: 0.2cm;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slaegray;
-}
-
-.navbar {
-  padding: 15px 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar:after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-.navbar-light {
-  background: #efece9;
-  color: #444444;
-}
-
-.navbar-dark {
-  background-color: #1e1e1e;
-  color: #cccccc;
-}
-
-.navbar-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 23px;
-  float: left;
-  margin: 0.2em 1.5em;
-  line-height: 20%;
-}
-
-.nav {
-  float: right;
-  margin-right: 30px;
-}
-
-.nav ul {
-  font-family: 'Raleway', Arial, sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.nav ul li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0 1em;
-  overflow: hidden;
-}
-
-.nav ul li a {
-  padding: 0 0.5em 0 0.2em;
-  color: #111111;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1px;
-  margin: 0;
-  text-decoration: none;
-}
-
-.nav ul li a:before,
-.nav ul li a:after {
-  position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.nav ul li a:before {
-  right: 100%;
-  display: block;
-  width: 3px;
-  height: 100%;
-  content: "";
-  background-color: #f39c12;
-  color: #111111;
-}
-
-.nav ul li a:after {
-  padding: 0 0.5em 0 0.2em;
-  position: absolute;
-  right: 100%;
-  top: 0;
-  content: attr(data-hover);
-  color: #FF4136;
-  white-space: nowrap;
-}
-
-.nav ul li:hover a,
-.nav ul .current a {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-.nav ul * {
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.parallax {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-  background-image: url("../../media/moja.jpg");
-  width: 100%;
-  height: 70vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.about {
-  margin-top: 400px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 16px;
-  padding: 70px 90px;
-  text-align: justify;
-}
-
-.media {
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-  width: 100%;
-  margin: 40px 0;
-}
-
-.media .main-content {
-  margin-top: 50px;
-}
-
-.media .main-content img {
-  width: 600px;
-  height: 350px;
-}
-
-.media .main-content .text {
-  width: 400px;
-  padding: 40px 0;
-  text-align: justify;
-  margin: 40px 40px 0 40px;
-  font-size: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.media .main-content:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
 .container {
   width: 90%;
   margin: auto;
@@ -822,5 +645,280 @@ body::-webkit-scrollbar-thumb {
 
 .py-5 {
   padding: 50px 0;
+}
+
+.text-center {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-left {
+  text-align: left;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF9F8;
+}
+
+body::-webkit-scrollbar {
+  width: 0.2cm;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slaegray;
+}
+
+.navbar {
+  padding: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.navbar-light {
+  background: #efece9;
+  color: #444444;
+}
+
+.navbar-dark {
+  background-color: #1e1e1e;
+  color: #cccccc;
+}
+
+.navbar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 23px;
+  float: left;
+  margin: 0.2em 1.5em;
+  line-height: 20%;
+}
+
+.nav {
+  float: right;
+  margin-right: 30px;
+}
+
+.nav ul {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav ul li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  overflow: hidden;
+}
+
+.nav ul li a {
+  padding: 0 0.5em 0 0.2em;
+  color: #111111;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.nav ul li a:before,
+.nav ul li a:after {
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav ul li a:before {
+  right: 100%;
+  display: block;
+  width: 3px;
+  height: 100%;
+  content: "";
+  background-color: #f39c12;
+  color: #111111;
+}
+
+.nav ul li a:after {
+  padding: 0 0.5em 0 0.2em;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  content: attr(data-hover);
+  color: #FF4136;
+  white-space: nowrap;
+}
+
+.nav ul li:hover a,
+.nav ul .current a {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.nav ul * {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parallax {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  background-image: url("../../media/moja.jpg");
+  width: 100%;
+  height: 70vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contena {
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  top: 420px;
+  padding: 20px;
+  background: #000000ef;
+  margin: 0 0 0 400px;
+}
+
+.contena ul {
+  color: #ffff;
+}
+
+.contena ul li {
+  color: #ffff;
+  display: none;
+  -webkit-transition: display 10s linear;
+  transition: display 10s linear;
+}
+
+.contena ul li h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.contena ul li p {
+  text-align: justify;
+  padding: 10px 0;
+  font-family: 'Acme', sans-serif;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.about {
+  margin-top: 100px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  padding: 70px 90px;
+  text-align: justify;
+}
+
+.media {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  width: 100%;
+  margin: 40px 0;
+}
+
+.media .main-content {
+  margin-top: 50px;
+}
+
+.media .main-content img {
+  width: 600px;
+  height: 350px;
+}
+
+.media .main-content .text {
+  width: 400px;
+  padding: 40px 0;
+  text-align: justify;
+  margin: 40px 40px 0 40px;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.media .main-content:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.route {
+  padding: 30px 20px;
+}
+
+.route h1 {
+  font-size: 30px;
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.route .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  grid-gap: 4px;
+}
+
+.route .row .column {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border: 8px #aaa5a5f3 solid;
+}
+
+.route .row .column .overlay {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.route .row .column .overlay p {
+  text-align: center;
+  position: relative;
+  top: 90px;
+  font-family: 'Mansalva', cursive;
+}
+
+.route .row .column .overlay:hover {
+  background: #1a1a1af1;
 }
 /*# sourceMappingURL=main.css.map */
